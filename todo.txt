@@ -1,0 +1,22 @@
+FEATURES
+User account system:
+	UI
+	server 
+Locating:
+	find out nearest 10 snow mountains:
+	UI
+	Algorithm
+find ur friend:
+	UI
+	database
+
+Prices:
+	display the price of lift tickets of nearby mountains in ascending order
+
+Forum:
+	for each mountain there's a forum. 
+	Snow report, weather report, rating, discussion board 
+		
+	
+	
+	
