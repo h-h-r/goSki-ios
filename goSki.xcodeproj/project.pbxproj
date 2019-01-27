@@ -54,14 +54,46 @@
 		CC8624E121FE34ED00E55C3F /* goSki */ = {
 			isa = PBXGroup;
 			children = (
-				CC8624E221FE34ED00E55C3F /* AppDelegate.swift */,
-				CC8624E421FE34ED00E55C3F /* ViewController.swift */,
-				CC8624E621FE34ED00E55C3F /* Main.storyboard */,
+				CC8624F421FE3AAE00E55C3F /* Model */,
+				CC8624F521FE3AC600E55C3F /* View */,
+				CC8624F621FE3AD400E55C3F /* Controller */,
 				CC8624E921FE34EF00E55C3F /* Assets.xcassets */,
-				CC8624EB21FE34EF00E55C3F /* LaunchScreen.storyboard */,
 				CC8624EE21FE34EF00E55C3F /* Info.plist */,
+				CC8624F721FE3B2A00E55C3F /* Supporting Files */,
 			);
 			path = goSki;
+			sourceTree = "<group>";
+		};
+		CC8624F421FE3AAE00E55C3F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CC8624F521FE3AC600E55C3F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CC8624EB21FE34EF00E55C3F /* LaunchScreen.storyboard */,
+				CC8624E621FE34ED00E55C3F /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CC8624F621FE3AD400E55C3F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CC8624E421FE34ED00E55C3F /* ViewController.swift */,
+				CC8624E221FE34ED00E55C3F /* AppDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CC8624F721FE3B2A00E55C3F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
