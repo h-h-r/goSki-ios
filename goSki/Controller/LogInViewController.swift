@@ -8,7 +8,7 @@
 
 import UIKit
 import Firebase
-//import 
+import SVProgressHUD
 
 class LogInViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
@@ -21,20 +21,23 @@ class LogInViewController: UIViewController {
     }
     
     @IBAction func logInPressed(_ sender: UIButton) {
-        print("log in pressed!")
+//        print("log in pressed!")
+        SVProgressHUD.show()
         Auth.auth().signIn(withEmail: emailTextField.text!, password: passWordTextField.text!)
         { (authDataResult, error) in
             if error != nil{
-                
+                SVProgressHUD.dismiss()
                 //login in failed received error from firebase, then pop an alert to UI
                 let alert = UIAlertController(title: "Log in failed", message: "\(error!.localizedDescription)", preferredStyle: .alert )
                 alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
                     NSLog("The \"OK\" alert occured.")
                 }))
                 self.present(alert,animated: true,completion: nil)
+                self.passWordTextField.text = ""
                 
             }else{
                 print("log in successful")
+                SVProgressHUD.dismiss()
             }
         }
         
