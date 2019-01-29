@@ -9,6 +9,7 @@ To work on this project:
 		-> add:   pod 'Firebase/Core'
 			  pod 'Firebase/Auth'
  			  pod 'Firebase/Database'
+ 			  pod 'SVProgressHUD'
 			below   # Pods for goSki       and close Podfile
 		-> type pod install. When installation succeeds,  open goSki.xcworkspace and you're good to go
 		-> try to build project, if xcode complains about: no such modual 'Firebase'   type   pod update    and hit 			enter in the terminal; wait till you see "Pod installation complete!"

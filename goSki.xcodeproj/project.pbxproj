@@ -80,9 +80,7 @@
 				CC8624F521FE3AC600E55C3F /* View */,
 				CC8624F621FE3AD400E55C3F /* Controller */,
 				CC8624E921FE34EF00E55C3F /* Assets.xcassets */,
-				CC8624EE21FE34EF00E55C3F /* Info.plist */,
-				CC862521220016AE00E55C3F /* GoogleService-Info.plist */,
-				CC8624F721FE3B2A00E55C3F /* Supporting Files */,
+				CC86252E2200EEDA00E55C3F /* SupportingFile */,
 			);
 			path = goSki;
 			sourceTree = "<group>";
@@ -114,11 +112,13 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		CC8624F721FE3B2A00E55C3F /* Supporting Files */ = {
+		CC86252E2200EEDA00E55C3F /* SupportingFile */ = {
 			isa = PBXGroup;
 			children = (
+				CC8624EE21FE34EF00E55C3F /* Info.plist */,
+				CC862521220016AE00E55C3F /* GoogleService-Info.plist */,
 			);
-			path = "Supporting Files";
+			path = SupportingFile;
 			sourceTree = "<group>";
 		};
 		D7BC8C0ED828B434517746D7 /* Frameworks */ = {
@@ -408,7 +408,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JPMUMY4GB5;
-				INFOPLIST_FILE = goSki/Info.plist;
+				INFOPLIST_FILE = goSki/SupportingFile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -427,7 +427,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JPMUMY4GB5;
-				INFOPLIST_FILE = goSki/Info.plist;
+				INFOPLIST_FILE = goSki/SupportingFile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

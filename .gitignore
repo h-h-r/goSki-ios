@@ -1,6 +1,9 @@
+GoogleService-Info.plist
+
 ## Build generated
 build/
 DerivedData/
+
 
 ## Various settings
 *.pbxuser

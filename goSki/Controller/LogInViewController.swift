@@ -7,7 +7,8 @@
 //
 
 import UIKit
-
+import Firebase
+//import 
 
 class LogInViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
@@ -21,6 +22,22 @@ class LogInViewController: UIViewController {
     
     @IBAction func logInPressed(_ sender: UIButton) {
         print("log in pressed!")
+        Auth.auth().signIn(withEmail: emailTextField.text!, password: passWordTextField.text!)
+        { (authDataResult, error) in
+            if error != nil{
+                
+                //login in failed received error from firebase, then pop an alert to UI
+                let alert = UIAlertController(title: "Log in failed", message: "\(error!.localizedDescription)", preferredStyle: .alert )
+                alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                    NSLog("The \"OK\" alert occured.")
+                }))
+                self.present(alert,animated: true,completion: nil)
+                
+            }else{
+                print("log in successful")
+            }
+        }
+        
     }
     
 
