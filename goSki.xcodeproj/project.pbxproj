@@ -14,6 +14,7 @@
 		CC8624ED21FE34EF00E55C3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC8624EB21FE34EF00E55C3F /* LaunchScreen.storyboard */; };
 		CC86251C21FFF72200E55C3F /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC86251B21FFF72200E55C3F /* LogInViewController.swift */; };
 		CC86251E21FFF7DD00E55C3F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC86251D21FFF7DD00E55C3F /* RegisterViewController.swift */; };
+		CC862522220016AE00E55C3F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC862521220016AE00E55C3F /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		CC8624EE21FE34EF00E55C3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC86251B21FFF72200E55C3F /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		CC86251D21FFF7DD00E55C3F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		CC862521220016AE00E55C3F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				CC8624F621FE3AD400E55C3F /* Controller */,
 				CC8624E921FE34EF00E55C3F /* Assets.xcassets */,
 				CC8624EE21FE34EF00E55C3F /* Info.plist */,
+				CC862521220016AE00E55C3F /* GoogleService-Info.plist */,
 				CC8624F721FE3B2A00E55C3F /* Supporting Files */,
 			);
 			path = goSki;
@@ -161,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC8624ED21FE34EF00E55C3F /* LaunchScreen.storyboard in Resources */,
+				CC862522220016AE00E55C3F /* GoogleService-Info.plist in Resources */,
 				CC8624EA21FE34EF00E55C3F /* Assets.xcassets in Resources */,
 				CC8624E821FE34ED00E55C3F /* Main.storyboard in Resources */,
 			);
