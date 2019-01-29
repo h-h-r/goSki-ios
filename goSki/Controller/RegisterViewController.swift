@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class RegisterViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
@@ -24,8 +25,18 @@ class RegisterViewController: UIViewController {
             print("Passwords entered are different.")
         }else{
             print("go register")
+            Auth.auth().createUser(withEmail: emailTextField.text!, password: passWordTextField.text!) {
+                (authDataResult, error) in
+                if error != nil{
+                    print("!!! error", error!)
+                }else{
+                    print("registration successful!")
+                }
+            }
+            
         }
     }
+    
     
 
     /*
