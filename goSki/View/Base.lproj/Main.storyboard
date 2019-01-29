@@ -156,6 +156,9 @@
                                 <state key="normal" title="Register">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="registerPressed:" destination="mDM-gw-RYT" eventType="touchUpInside" id="8nj-xF-UGU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -179,6 +182,11 @@
                     <navigationItem key="navigationItem" title="Register" id="pXm-L3-o7a">
                         <barButtonItem key="backBarButtonItem" title="welcome" id="epw-C7-e5C"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="confirmPassWordTextField" destination="ZiE-Gc-B6F" id="acj-Ah-vFy"/>
+                        <outlet property="emailTextField" destination="vfE-aT-7RF" id="iky-Fj-dqc"/>
+                        <outlet property="passWordTextField" destination="YfJ-82-DmK" id="JTM-NU-kd9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eph-eT-nJH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -187,7 +195,7 @@
         <!--Log In-->
         <scene sceneID="QAZ-ti-9zk">
             <objects>
-                <viewController id="2Pa-q6-0cT" customClass="LoginViewController" customModule="goSki" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2Pa-q6-0cT" customClass="LogInViewController" customModule="goSki" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yrj-U8-KkS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -215,7 +223,10 @@
                                         </constraints>
                                         <viewLayoutGuide key="safeArea" id="5FV-Xv-coU"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="login"/>
+                                        <state key="normal" title="Log In"/>
+                                        <connections>
+                                            <action selector="logInPressed:" destination="2Pa-q6-0cT" eventType="touchUpInside" id="sQf-md-lvo"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7s5-he-mgK">
                                         <rect key="frame" x="87.666666666666686" y="0.0" width="200" height="30"/>
@@ -259,6 +270,10 @@
                     <navigationItem key="navigationItem" title="Log In" id="ZIe-hR-tmc">
                         <barButtonItem key="backBarButtonItem" title="welcome" id="hYx-ku-YId"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="emailTextField" destination="7s5-he-mgK" id="75v-Fy-gyT"/>
+                        <outlet property="passWordTextField" destination="qax-Iw-Tbd" id="ZK8-0l-xUT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ha8-qE-gAk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
