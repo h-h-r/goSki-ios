@@ -215,10 +215,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1Be-v2-Nv6">
-                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPz-87-iEv">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="345"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="362"/>
                                         <color key="backgroundColor" red="0.86071985959999997" green="0.55628442759999996" blue="0.60392028090000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="FindMountain"/>
                                         <connections>
@@ -226,7 +226,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XB1-sr-Fia">
-                                        <rect key="frame" x="0.0" y="345" width="375" height="345"/>
+                                        <rect key="frame" x="0.0" y="362" width="375" height="362"/>
                                         <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="FindFriend"/>
                                         <connections>
@@ -234,17 +234,24 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <color key="backgroundColor" red="0.74149310670000002" green="1" blue="0.98715795260000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="XB1-sr-Fia" firstAttribute="height" secondItem="VPz-87-iEv" secondAttribute="height" id="IRY-Ig-SDK"/>
+                                    <constraint firstItem="VPz-87-iEv" firstAttribute="top" secondItem="1Be-v2-Nv6" secondAttribute="top" id="711-hl-N0j"/>
+                                    <constraint firstItem="VPz-87-iEv" firstAttribute="leading" secondItem="1Be-v2-Nv6" secondAttribute="leading" id="8lz-Ng-QFl"/>
+                                    <constraint firstAttribute="trailing" secondItem="VPz-87-iEv" secondAttribute="trailing" id="AHc-F7-PRy"/>
+                                    <constraint firstItem="XB1-sr-Fia" firstAttribute="leading" secondItem="1Be-v2-Nv6" secondAttribute="leading" id="OVT-9s-Kyj"/>
+                                    <constraint firstItem="XB1-sr-Fia" firstAttribute="height" secondItem="VPz-87-iEv" secondAttribute="height" id="bvw-5Y-QEU"/>
+                                    <constraint firstAttribute="trailing" secondItem="XB1-sr-Fia" secondAttribute="trailing" id="sbW-qa-74S"/>
+                                    <constraint firstAttribute="bottom" secondItem="XB1-sr-Fia" secondAttribute="bottom" id="zZD-ZH-EXJ"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="1Be-v2-Nv6" firstAttribute="leading" secondItem="2wP-kN-lmz" secondAttribute="leading" id="8Ma-Ri-Ys3"/>
-                            <constraint firstItem="2wP-kN-lmz" firstAttribute="bottom" secondItem="1Be-v2-Nv6" secondAttribute="bottom" id="e67-7L-DUU"/>
-                            <constraint firstItem="1Be-v2-Nv6" firstAttribute="top" secondItem="2wP-kN-lmz" secondAttribute="top" id="map-4V-wx5"/>
-                            <constraint firstItem="2wP-kN-lmz" firstAttribute="trailing" secondItem="1Be-v2-Nv6" secondAttribute="trailing" id="mce-kS-Emr"/>
+                            <constraint firstItem="1Be-v2-Nv6" firstAttribute="top" secondItem="2wP-kN-lmz" secondAttribute="top" id="8qS-fA-Hbg"/>
+                            <constraint firstAttribute="bottom" secondItem="1Be-v2-Nv6" secondAttribute="bottom" id="D1w-D6-0fN"/>
+                            <constraint firstItem="1Be-v2-Nv6" firstAttribute="leading" secondItem="2wP-kN-lmz" secondAttribute="leading" id="Ni3-RD-H0T"/>
+                            <constraint firstItem="2wP-kN-lmz" firstAttribute="trailing" secondItem="1Be-v2-Nv6" secondAttribute="trailing" id="QK8-YV-zG1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2wP-kN-lmz"/>
                     </view>
