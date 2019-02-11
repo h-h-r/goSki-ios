@@ -15,6 +15,7 @@
 		CC86251C21FFF72200E55C3F /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC86251B21FFF72200E55C3F /* LogInViewController.swift */; };
 		CC86251E21FFF7DD00E55C3F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC86251D21FFF7DD00E55C3F /* RegisterViewController.swift */; };
 		CC862522220016AE00E55C3F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC862521220016AE00E55C3F /* GoogleService-Info.plist */; };
+		CCFE8C562211488300471D23 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFE8C552211488300471D23 /* HomeViewController.swift */; };
 		F0177AD20608042D9424D878 /* Pods_goSki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3BE5871D6BF5AD1B6442791 /* Pods_goSki.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		CC86251B21FFF72200E55C3F /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		CC86251D21FFF7DD00E55C3F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		CC862521220016AE00E55C3F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CCFE8C552211488300471D23 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F3BE5871D6BF5AD1B6442791 /* Pods_goSki.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_goSki.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -108,6 +110,7 @@
 				CC8624E221FE34ED00E55C3F /* AppDelegate.swift */,
 				CC86251B21FFF72200E55C3F /* LogInViewController.swift */,
 				CC86251D21FFF7DD00E55C3F /* RegisterViewController.swift */,
+				CCFE8C552211488300471D23 /* HomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCFE8C562211488300471D23 /* HomeViewController.swift in Sources */,
 				CC8624E521FE34ED00E55C3F /* WelcomeViewController.swift in Sources */,
 				CC8624E321FE34ED00E55C3F /* AppDelegate.swift in Sources */,
 				CC86251C21FFF72200E55C3F /* LogInViewController.swift in Sources */,
