@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class HomeViewController: UIViewController {
 
@@ -34,5 +35,13 @@ class HomeViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func logOutPressed(_ sender: UIBarButtonItem) {
+        do{
+            try Auth.auth().signOut()
+            navigationController?.popToRootViewController(animated: true)
+        }catch{
+            print("error , a problem signing out")
+        }
+    }
+    
 }

@@ -45,7 +45,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vc6-ir-oxU">
                                 <rect key="frame" x="0.0" y="678" width="375" height="50"/>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="0.56897474315068497" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Ycz-h7-QbA"/>
                                 </constraints>
@@ -58,16 +58,29 @@
                                     <segue destination="2Pa-q6-0cT" kind="show" id="RQf-i6-PKE"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HsY-ma-Po8">
+                                <rect key="frame" x="0.0" y="628" width="375" height="50"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.84439212328767121" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Guest"/>
+                                <connections>
+                                    <segue destination="108-V4-SAD" kind="show" id="oNH-aL-Foo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="vc6-ir-oxU" firstAttribute="height" secondItem="HsY-ma-Po8" secondAttribute="height" id="3GK-I0-4ye"/>
                             <constraint firstItem="vc6-ir-oxU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="858-Vy-9iR"/>
+                            <constraint firstItem="vc6-ir-oxU" firstAttribute="top" secondItem="HsY-ma-Po8" secondAttribute="bottom" id="CMJ-2h-bKI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CuD-GG-szs" secondAttribute="bottom" id="LtV-L7-ZwT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vc6-ir-oxU" secondAttribute="trailing" id="Pbo-ox-ZKx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CuD-GG-szs" secondAttribute="trailing" id="Rtc-wa-S7E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HsY-ma-Po8" secondAttribute="trailing" id="UpA-Gv-Bem"/>
                             <constraint firstItem="nci-TZ-4t4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Yiq-03-UqR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="406-Sw-aQt" secondAttribute="trailing" id="caW-gV-FaX"/>
                             <constraint firstItem="CuD-GG-szs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fHD-h1-U7Y"/>
+                            <constraint firstItem="HsY-ma-Po8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fc5-pd-Gj5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nci-TZ-4t4" secondAttribute="trailing" id="iLb-CN-7NT"/>
                             <constraint firstItem="nci-TZ-4t4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kYj-Cw-WaL"/>
                             <constraint firstItem="406-Sw-aQt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="oGK-CQ-m8a"/>
@@ -238,6 +251,9 @@
                     <navigationItem key="navigationItem" title="Home" id="mfG-rs-9Uf">
                         <barButtonItem key="leftBarButtonItem" title="&lt; Logout" id="N3J-WF-EYP">
                             <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="logOutPressed:" destination="108-V4-SAD" id="FGV-zn-CXF"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
@@ -387,6 +403,6 @@
         <image name="loginBackground" width="750" height="1334"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="7XR-Ph-5Ps"/>
+        <segue reference="oNH-aL-Foo"/>
     </inferredMetricsTieBreakers>
 </document>
