@@ -10,22 +10,29 @@ import UIKit
 import Firebase
 
 class HomeViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-//        self.navigationController?.delegate = self as? UINavigationControllerDelegate
-//        self.navigationController?.isNavigationBarHidden = true
-        
-//        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "back", style: .plain, target: nil, action: nil)
-//        let item = UIBarButtonItem(title: " ", style: .plain, target: nil, action: nil)
-//        self.navigationItem.backBarButtonItem = item
-//        self.navigationController?.navigationBar.topItem?.title = ""; 
-        // Do any additional setup after loading the view.
-//        self.navigationItem.backBarButtonItem?.title = ""
-//        navigationItem.backBarButtonItem = UIBarButtonItem(title: " ", style: .plain, target: nil, action: nil)
-    }
+    var isGuest: Bool = false;
     
+    @IBOutlet weak var findFriendButton: UIButton!
+    @IBOutlet weak var backButton: UIBarButtonItem!
+    
+    override func viewDidLoad() {
+       
+        
+        super.viewDidLoad()
+        if self.isGuest == true{
+            self.findFriendButton.setTitleColor(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), for: .normal)
+            self.findFriendButton.isEnabled = false
+            backButton.title = "< Back"
+        }
 
+    }
+
+
+    
+    
+//    @IBAction func findFriendButtonPressed(_ sender: UIButton) {
+//        
+//    }
     /*
     // MARK: - Navigation
 
@@ -36,9 +43,12 @@ class HomeViewController: UIViewController {
     }
     */
     @IBAction func logOutPressed(_ sender: UIBarButtonItem) {
+        
+        
         do{
             try Auth.auth().signOut()
             navigationController?.popToRootViewController(animated: true)
+            print("log out successful!")
         }catch{
             print("error , a problem signing out")
         }

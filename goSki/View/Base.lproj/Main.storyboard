@@ -64,7 +64,7 @@
                                 <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Guest"/>
                                 <connections>
-                                    <segue destination="108-V4-SAD" kind="show" id="oNH-aL-Foo"/>
+                                    <segue destination="108-V4-SAD" kind="show" identifier="goToHomeFromGuest" id="oNH-aL-Foo"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -214,23 +214,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBackground" translatesAutoresizingMaskIntoConstraints="NO" id="mXh-dT-vJE">
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1Be-v2-Nv6">
                                 <rect key="frame" x="0.0" y="88" width="375" height="724"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPz-87-iEv">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="362"/>
-                                        <color key="backgroundColor" red="0.86071985959999997" green="0.55628442759999996" blue="0.60392028090000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="FindMountain"/>
+                                        <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="60"/>
+                                        <state key="normal" title="FindMountain">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <segue destination="SUO-Ai-yTP" kind="show" id="7Hr-uZ-68g"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XB1-sr-Fia">
                                         <rect key="frame" x="0.0" y="362" width="375" height="362"/>
-                                        <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="FindFriend"/>
+                                        <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="60"/>
+                                        <state key="normal" title="findFriend">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
-                                            <segue destination="mW0-7g-Yfh" kind="show" id="vAU-S2-Q3I"/>
+                                            <segue destination="mW0-7g-Yfh" kind="show" id="ZXK-va-5zd"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -248,21 +255,29 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="mXh-dT-vJE" secondAttribute="bottom" id="3KV-ic-kKr"/>
+                            <constraint firstItem="mXh-dT-vJE" firstAttribute="top" secondItem="2wP-kN-lmz" secondAttribute="top" id="4vJ-vG-foY"/>
                             <constraint firstItem="1Be-v2-Nv6" firstAttribute="top" secondItem="2wP-kN-lmz" secondAttribute="top" id="8qS-fA-Hbg"/>
+                            <constraint firstItem="mXh-dT-vJE" firstAttribute="trailing" secondItem="2wP-kN-lmz" secondAttribute="trailing" id="9cj-T4-Ke3"/>
                             <constraint firstAttribute="bottom" secondItem="1Be-v2-Nv6" secondAttribute="bottom" id="D1w-D6-0fN"/>
+                            <constraint firstItem="mXh-dT-vJE" firstAttribute="leading" secondItem="2wP-kN-lmz" secondAttribute="leading" id="IYP-vK-IQp"/>
                             <constraint firstItem="1Be-v2-Nv6" firstAttribute="leading" secondItem="2wP-kN-lmz" secondAttribute="leading" id="Ni3-RD-H0T"/>
                             <constraint firstItem="2wP-kN-lmz" firstAttribute="trailing" secondItem="1Be-v2-Nv6" secondAttribute="trailing" id="QK8-YV-zG1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2wP-kN-lmz"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="mfG-rs-9Uf">
-                        <barButtonItem key="leftBarButtonItem" title="&lt; Logout" id="N3J-WF-EYP">
+                        <barButtonItem key="leftBarButtonItem" title="&lt; LogOut" id="N3J-WF-EYP">
                             <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="logOutPressed:" destination="108-V4-SAD" id="FGV-zn-CXF"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="backButton" destination="N3J-WF-EYP" id="k8I-B0-0Iz"/>
+                        <outlet property="findFriendButton" destination="XB1-sr-Fia" id="aoc-eA-tZJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="20J-kw-L3s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -410,6 +425,6 @@
         <image name="loginBackground" width="750" height="1334"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="oNH-aL-Foo"/>
+        <segue reference="HgR-3f-RQR"/>
     </inferredMetricsTieBreakers>
 </document>
