@@ -28,8 +28,7 @@ class HomeViewController: UIViewController {
     }
 
 
-    
-    
+
 //    @IBAction func findFriendButtonPressed(_ sender: UIButton) {
 //        
 //    }
