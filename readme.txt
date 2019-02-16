@@ -1,7 +1,5 @@
 This is a project for rpi SDD.
 
-![image](https://user-images.githubusercontent.com/34008334/52890943-88495800-3155-11e9-9df5-48da2c4a5b33.png)
-
 To work on this project:
 	0. download this skeleton project 
 	1. ask h-h-r for GoogleService-Info.plist and drag it into Xcode navigation bar next to Info.plist
