@@ -38,6 +38,7 @@ class LogInViewController: UIViewController {
             }else{
                 print("log in successful")
                 SVProgressHUD.dismiss()
+                self.performSegue(withIdentifier: "goToHomeFromLogIn", sender: self)
             }
         }
         

@@ -33,24 +33,21 @@ class RegisterViewController: UIViewController {
         SVProgressHUD.show()
         //user entered two different passwords
         if passWordTextField.text != confirmPassWordTextField.text{
-            print("Passwords entered are different.")
             displayUIAlert(title: "Registration Failed", text: "You've entered two different password.", buttonText: "OK")
             SVProgressHUD.dismiss()
         // try connect to server and register
         }else{
-            print("go register")
             Auth.auth().createUser(withEmail: emailTextField.text!, password: passWordTextField.text!) {
                 (authDataResult, error) in
                 // received eorror
                 if error != nil{
-                    
-                    print("!!! error", error!)
                     self.displayUIAlert(title: "registration failed", text: "\(error!.localizedDescription)", buttonText: "OK")
                     SVProgressHUD.dismiss()
                 //registration successful
                 }else{
                     SVProgressHUD.dismiss()
                     print("registration successful!")
+                    self.performSegue(withIdentifier: "goToHomeFromRegister", sender: self)
                 }
             }
             

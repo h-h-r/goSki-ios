@@ -22,5 +22,12 @@ class WelcomeViewController: UIViewController {
     @IBAction func registerPressed(_ sender: UIButton) {
         print("welcome scene: register pressed!")
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToHomeFromGuest" {
+            let destVC = segue.destination as! HomeViewController
+            destVC.isGuest = true
+        }
+    }
 }
 
