@@ -11,9 +11,4 @@ target 'goSki' do
   pod 'Firebase/Database'
   pod 'SVProgressHUD'
 
-  #Pods for Google Maps
-  source 'https://github.com/CocoaPods/Specs.git'
-      pod 'GoogleMaps'
-      pod 'GooglePlaces'
-
 end

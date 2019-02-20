@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7405CA45220288080031F18F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7405CA44220288080031F18F /* GoogleService-Info.plist */; };
 		7464052D220B9C890068CE0D /* MountainFinderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7464052C220B9C890068CE0D /* MountainFinderController.swift */; };
 		74913A35221C92FD0060BF61 /* skiMountainData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74913A34221C92FD0060BF61 /* skiMountainData.swift */; };
 		CC8624E321FE34ED00E55C3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8624E221FE34ED00E55C3F /* AppDelegate.swift */; };
@@ -17,13 +16,13 @@
 		CC8624ED21FE34EF00E55C3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC8624EB21FE34EF00E55C3F /* LaunchScreen.storyboard */; };
 		CC86251C21FFF72200E55C3F /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC86251B21FFF72200E55C3F /* LogInViewController.swift */; };
 		CC86251E21FFF7DD00E55C3F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC86251D21FFF7DD00E55C3F /* RegisterViewController.swift */; };
+		CCEE1FF2221CDAE900144A54 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CCEE1FF1221CDAE900144A54 /* GoogleService-Info.plist */; };
 		CCFE8C562211488300471D23 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFE8C552211488300471D23 /* HomeViewController.swift */; };
 		F0177AD20608042D9424D878 /* Pods_goSki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3BE5871D6BF5AD1B6442791 /* Pods_goSki.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4B164A4BE30E9477034D0AE4 /* Pods-goSki.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-goSki.release.xcconfig"; path = "Pods/Target Support Files/Pods-goSki/Pods-goSki.release.xcconfig"; sourceTree = "<group>"; };
-		7405CA44220288080031F18F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7464052C220B9C890068CE0D /* MountainFinderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainFinderController.swift; sourceTree = "<group>"; };
 		74913A33221C8D2B0060BF61 /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
 		74913A34221C92FD0060BF61 /* skiMountainData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = skiMountainData.swift; path = goSki/SupportingFile/skiMountainData.swift; sourceTree = SOURCE_ROOT; };
@@ -37,6 +36,7 @@
 		CC8624EE21FE34EF00E55C3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC86251B21FFF72200E55C3F /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		CC86251D21FFF7DD00E55C3F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		CCEE1FF1221CDAE900144A54 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../googleplist/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CCFE8C552211488300471D23 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F3BE5871D6BF5AD1B6442791 /* Pods_goSki.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_goSki.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -125,7 +125,7 @@
 		CC86252E2200EEDA00E55C3F /* SupportingFile */ = {
 			isa = PBXGroup;
 			children = (
-				7405CA44220288080031F18F /* GoogleService-Info.plist */,
+				CCEE1FF1221CDAE900144A54 /* GoogleService-Info.plist */,
 				CC8624EE21FE34EF00E55C3F /* Info.plist */,
 				74913A33221C8D2B0060BF61 /* Location.gpx */,
 			);
@@ -202,7 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC8624ED21FE34EF00E55C3F /* LaunchScreen.storyboard in Resources */,
-				7405CA45220288080031F18F /* GoogleService-Info.plist in Resources */,
+				CCEE1FF2221CDAE900144A54 /* GoogleService-Info.plist in Resources */,
 				CC8624EA21FE34EF00E55C3F /* Assets.xcassets in Resources */,
 				CC8624E821FE34ED00E55C3F /* Main.storyboard in Resources */,
 			);
@@ -448,7 +448,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QF2D2NXN73;
+				DEVELOPMENT_TEAM = JPMUMY4GB5;
 				INFOPLIST_FILE = goSki/SupportingFile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -467,7 +467,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QF2D2NXN73;
+				DEVELOPMENT_TEAM = JPMUMY4GB5;
 				INFOPLIST_FILE = goSki/SupportingFile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

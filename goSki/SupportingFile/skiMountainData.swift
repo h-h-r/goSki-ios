@@ -28,7 +28,6 @@ class skiMountainData {
         var lat: Double
         var long: Double
         var address: String
-        var distanceFromUser: Double
         
         var hashValue: Int { return lat.hashValue + long.hashValue }
         
@@ -121,60 +120,60 @@ class skiMountainData {
                 }
             }
             //creates the skiMountain struct and adds it to a list
-            let tempMountain = skiMountain(name: mountainName!, lat: mountainLat!, long: mountainLong!, address: mountainAddress!, distanceFromUser: getMountainDistanceFromUser(mountainLat: mountainLat!, mountainLong: mountainLong!))
+            let tempMountain = skiMountain(name: mountainName!, lat: mountainLat!, long: mountainLong!, address: mountainAddress!)
             skiMountains.append(tempMountain)
         }
     }
     
-    func getMountainDistanceFromUser(mountainLat: Double, mountainLong: Double) -> Double {
-        let mainURL: String = "https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&"
-        let orginsParam: String = "orgins=" + String(format:"%f", userLat!) + "," + String(format:"%f", userLong!) + "&"
-        let destinationsParam: String = "destinations=" + String(mountainLat) + "," + String(mountainLong) + "&"
-        let keyParam: String = "key=AIzaSyBW5tKbCE5fjbWBKde2menPdnCYkTQLq1E"
-        let urlAddress: String = mainURL + orginsParam + destinationsParam + keyParam
-        
-        do{
-            //makes url request
-            if let url = URL(string: urlAddress){
-                let data = try Data(contentsOf: url)
-                let json = try JSONSerialization.jsonObject(with: data, options: [])
-                //if json return is already a dictionary
-                if let object = json as? [String: Any]{
-                    for (key, value) in object {
-                        if(key as! String == "rows"){
-                            let elements = value as! NSDictionary
-                            for (key,value) in elements{
-                                if(key as! String == "distance"){
-                                    let distance = value as! NSDictionary
-                                    for (key, value) in distance {
-                                        if(key as! String == "value"){
-                                            let meters = value as! Double
-                                            print("Distance: ")
-                                            print(meters * 0.00062137)
-                                            return meters * 0.00062137
-                                        }
-                                    }
-                                }
-                            }
-                            
-                        }
-                    }
-                }
-                    //rest is error handling should never reach this point
-                else if let object = json as? [Any]{
-                    print("not dict")
-                }
-                else{
-                    print("Json is invlaid")
-                }
-            }
-            else{
-                print("no file")
-            }
-        }
-        catch{
-            print("*******ERROR**********")
-        }
-        return 0;
-    }
+//    func getMountainDistanceFromUser(mountainLat: Double, mountainLong: Double) -> Double {
+//        let mainURL: String = "https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&"
+//        let orginsParam: String = "orgins=" + String(format:"%f", userLat!) + "," + String(format:"%f", userLong!) + "&"
+//        let destinationsParam: String = "destinations=" + String(mountainLat) + "," + String(mountainLong) + "&"
+//        let keyParam: String = "key=AIzaSyBW5tKbCE5fjbWBKde2menPdnCYkTQLq1E"
+//        let urlAddress: String = mainURL + orginsParam + destinationsParam + keyParam
+//        
+//        do{
+//            //makes url request
+//            if let url = URL(string: urlAddress){
+//                let data = try Data(contentsOf: url)
+//                let json = try JSONSerialization.jsonObject(with: data, options: [])
+//                //if json return is already a dictionary
+//                if let object = json as? [String: Any]{
+//                    for (key, value) in object {
+//                        if(key as! String == "rows"){
+//                            let elements = value as! NSDictionary
+//                            for (key,value) in elements{
+//                                if(key as! String == "distance"){
+//                                    let distance = value as! NSDictionary
+//                                    for (key, value) in distance {
+//                                        if(key as! String == "value"){
+//                                            let meters = value as! Double
+//                                            print("Distance: ")
+//                                            print(meters * 0.00062137)
+//                                            return meters * 0.00062137
+//                                        }
+//                                    }
+//                                }
+//                            }
+//                            
+//                        }
+//                    }
+//                }
+//                    //rest is error handling should never reach this point
+//                else if let object = json as? [Any]{
+//                    print("not dict")
+//                }
+//                else{
+//                    print("Json is invlaid")
+//                }
+//            }
+//            else{
+//                print("no file")
+//            }
+//        }
+//        catch{
+//            print("*******ERROR**********")
+//        }
+//        return 0;
+//    }
 }
