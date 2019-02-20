@@ -22,6 +22,7 @@ class skiMountainData {
     
     typealias JSONDictionary = [String: Any]
     
+    
     struct skiMountain : Hashable {
         var name: String
         var lat: Double

@@ -15,6 +15,7 @@ class MountainFinderController: UIViewController, CLLocationManagerDelegate {
 
     let mountainModel = skiMountainData()
     
+    
     var placesClient: GMSPlacesClient?
     var locationManager = CLLocationManager()
     lazy var mapView = GMSMapView()
